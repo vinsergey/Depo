@@ -5,56 +5,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:paddingTop="@dimen/appbar_padding_top"
-        android:theme="@style/AppTheme.AppBarOverlay">
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/appbar"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+       <!---->
+    <!--</android.support.design.widget.AppBarLayout>-->
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_weight="1"
-            android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="snap|enterAlways"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="@string/app_name">
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:layout_scrollFlags="snap|enterAlways"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay"-->
+            <!--app:title="@string/app_name">-->
 
-        </android.support.v7.widget.Toolbar>
+        <!--</android.support.v7.widget.Toolbar>-->
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabIndicatorColor="@color/tabindicatorcolor"
+            app:tabTextColor="@color/tabtextcolor"
+            android:background="@color/colorPrimary" />
 
-            <android.support.design.widget.TabItem
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="@string/text_tram" />
+            <!--<android.support.design.widget.TabItem-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="@string/text_tram" />-->
 
-            <android.support.design.widget.TabItem
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="@string/text_trolleybus" />
+            <!--<android.support.design.widget.TabItem-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="@string/text_trolleybus" />-->
 
-            <android.support.design.widget.TabItem
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="@string/text_bus" />
-        </android.support.design.widget.TabLayout>
-    </android.support.design.widget.AppBarLayout>
+            <!--<android.support.design.widget.TabItem-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="@string/text_bus" />-->
 
-    <android.support.v4.widget.NestedScrollView
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+        android:layout_height="match_parent" />
 
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </android.support.constraint.ConstraintLayout>
-    </android.support.v4.widget.NestedScrollView>
 </android.support.design.widget.CoordinatorLayout>
