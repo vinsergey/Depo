@@ -1,4 +1,4 @@
-package com.example.vinsergey.depo.ui.transport
+package com.example.vinsergey.depo.ui.transport.trafficfragments
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
