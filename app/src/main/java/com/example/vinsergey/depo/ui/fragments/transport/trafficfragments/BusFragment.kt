@@ -1,4 +1,4 @@
-package com.example.vinsergey.depo.ui.transport.trafficfragments
+package com.example.vinsergey.depo.ui.fragments.transport.trafficfragments
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -7,9 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.vinsergey.depo.R
 
-class TramFragment: Fragment() {
+class BusFragment: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view: View = inflater.inflate(R.layout.fragment_tram, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_bus, container, false)
 
         return view
     }

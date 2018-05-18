@@ -6,4 +6,5 @@
     <string name="text_tram">Трамвай</string>
     <string name="text_trolleybus">Тролейбус</string>
     <string name="text_bus">Автобус</string>
+    <string name="tilda">-</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.vinsergey.depo.ui.transport
+package com.example.vinsergey.depo.ui.fragments.transport
 
 import android.os.Bundle
 import android.support.design.widget.TabLayout
@@ -8,9 +8,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.vinsergey.depo.R
-import com.example.vinsergey.depo.ui.transport.trafficfragments.BusFragment
-import com.example.vinsergey.depo.ui.transport.trafficfragments.TramFragment
-import com.example.vinsergey.depo.ui.transport.trafficfragments.TrolleybusFragment
+import com.example.vinsergey.depo.ui.adapters.ViewPagerAdapter
+import com.example.vinsergey.depo.ui.fragments.transport.trafficfragments.BusFragment
+import com.example.vinsergey.depo.ui.fragments.transport.trafficfragments.TramFragment
+import com.example.vinsergey.depo.ui.fragments.transport.trafficfragments.TrolleybusFragment
 
 class KindOfTransportFragment : Fragment() {
 

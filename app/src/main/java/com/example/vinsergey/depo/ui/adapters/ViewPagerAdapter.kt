@@ -1,4 +1,4 @@
-package com.example.vinsergey.depo.ui.transport
+package com.example.vinsergey.depo.ui.adapters
 
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager

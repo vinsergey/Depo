@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/fragment_kind_of_transport"
-        android:name="com.example.vinsergey.depo.ui.transport.KindOfTransportFragment"
+        android:name="com.example.vinsergey.depo.ui.fragments.transport.KindOfTransportFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"

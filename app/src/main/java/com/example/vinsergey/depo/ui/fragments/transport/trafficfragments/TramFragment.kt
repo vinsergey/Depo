@@ -1,4 +1,4 @@
-package com.example.vinsergey.depo.ui.shedule
+package com.example.vinsergey.depo.ui.fragments.transport.trafficfragments
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -7,9 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.vinsergey.depo.R
 
-class WorkDayFragment: Fragment() {
+class TramFragment: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view: View = inflater.inflate(R.layout.fragment_work_day, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_tram, container, false)
 
         return view
     }

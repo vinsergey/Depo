@@ -1,4 +1,4 @@
-package com.example.vinsergey.depo.ui.shedule
+package com.example.vinsergey.depo.ui.fragments.shedule
 
 import android.os.Bundle
 import android.support.v4.app.Fragment

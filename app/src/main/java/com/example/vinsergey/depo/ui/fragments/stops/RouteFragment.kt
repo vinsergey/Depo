@@ -1,4 +1,4 @@
-package com.example.vinsergey.depo.ui.stops
+package com.example.vinsergey.depo.ui.fragments.stops
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
