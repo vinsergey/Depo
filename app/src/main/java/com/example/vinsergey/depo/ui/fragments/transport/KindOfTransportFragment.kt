@@ -1,5 +1,6 @@
 package com.example.vinsergey.depo.ui.fragments.transport
 
+import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v4.app.Fragment
@@ -8,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.vinsergey.depo.R
+import com.example.vinsergey.depo.databinding.FragmentKindOfTransportBinding
 import com.example.vinsergey.depo.ui.adapters.ViewPagerAdapter
 import com.example.vinsergey.depo.ui.fragments.transport.trafficfragments.BusFragment
 import com.example.vinsergey.depo.ui.fragments.transport.trafficfragments.TramFragment
@@ -15,21 +17,18 @@ import com.example.vinsergey.depo.ui.fragments.transport.trafficfragments.Trolle
 
 class KindOfTransportFragment : Fragment() {
 
-    private lateinit var tabLayout: TabLayout
-    private lateinit var viewPager: ViewPager
+    private lateinit var binding: FragmentKindOfTransportBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view: View = inflater.inflate(R.layout.fragment_kind_of_transport, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_kind_of_transport, container, false)
 
-        tabLayout = view.findViewById(R.id.tabs)
-        viewPager = view.findViewById(R.id.viewpager)
         val adapter = ViewPagerAdapter(this.fragmentManager!!)
         adapter.addFragment(TramFragment(), resources.getString(R.string.text_tram))
         adapter.addFragment(TrolleybusFragment(), resources.getString(R.string.text_trolleybus))
         adapter.addFragment(BusFragment(), resources.getString(R.string.text_bus))
-        viewPager.adapter = adapter
-        tabLayout.setupWithViewPager(viewPager)
+        binding.viewpager.adapter = adapter
+        binding.tabs.setupWithViewPager(binding.viewpager)
 
-        return view
+        return binding.root
     }
 }

@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.RootActivity">
+    tools:context=".ui.MainActivity">
 
-    <fragment
-        android:id="@+id/fragment_kind_of_transport"
-        android:name="com.example.vinsergey.depo.ui.fragments.transport.KindOfTransportFragment"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout="@layout/fragment_kind_of_transport">
-    </fragment>
-</android.support.constraint.ConstraintLayout>
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/main_activity_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<fragment-->
+    <!--android:id="@+id/fragment_kind_of_transport"-->
+    <!--android:name="com.example.vinsergey.depo.ui.fragments.transport.KindOfTransportFragment"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--tools:layout="@layout/fragment_kind_of_transport"/>-->
+    <!--</android.support.constraint.ConstraintLayout>-->
+</layout>

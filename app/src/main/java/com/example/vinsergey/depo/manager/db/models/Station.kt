@@ -5,6 +5,7 @@ import android.arch.persistence.room.Entity
 import android.arch.persistence.room.ForeignKey
 import android.arch.persistence.room.ForeignKey.CASCADE
 import android.arch.persistence.room.PrimaryKey
+import com.example.vinsergey.depo.manager.db.RouteEntity
 
 
 @Entity(tableName = "station", foreignKeys = [(ForeignKey(entity = RouteEntity::class,

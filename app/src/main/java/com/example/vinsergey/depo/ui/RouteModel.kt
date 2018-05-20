@@ -1,6 +1,6 @@
-package com.example.vinsergey.depo.manager.db.models
+package com.example.vinsergey.depo.ui
 
-data class Route (
+data class RouteModel(
         var numberRoute: String? = null,
         var startRoute: String? = null,
         var endRoute: String? = null

@@ -6,12 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.example.vinsergey.depo.R
-import com.example.vinsergey.depo.ui.models.ModelRoute
+import com.example.vinsergey.depo.ui.RouteModel
 import java.util.*
 
 class TrafficRecyclerViewAdapter : RecyclerView.Adapter<TrafficRecyclerViewAdapter.ViewHolder>() {
 
-    private var data: List<ModelRoute> = Collections.emptyList()
+    private var data: List<RouteModel> = Collections.emptyList()
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.numberRoute.text = data[position].numberRoute
@@ -28,7 +28,7 @@ class TrafficRecyclerViewAdapter : RecyclerView.Adapter<TrafficRecyclerViewAdapt
         return data.size
     }
 
-    fun setData(data: List<ModelRoute>) {
+    fun setData(data: List<RouteModel>) {
         this.data = data
         notifyDataSetChanged()
     }
