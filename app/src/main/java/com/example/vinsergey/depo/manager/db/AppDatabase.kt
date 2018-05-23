@@ -4,6 +4,7 @@ import android.arch.persistence.room.Database
 import android.arch.persistence.room.Room
 import android.arch.persistence.room.RoomDatabase
 import android.content.Context
+import com.example.vinsergey.depo.manager.db.Entities.RouteEntity
 
 @Database(entities = [RouteEntity::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
