@@ -7,12 +7,16 @@ import android.arch.persistence.room.PrimaryKey
 @Entity(tableName = "route")
 data class RouteEntity(
         @PrimaryKey
+        @ColumnInfo(name = "route_id")
+        var routeId: Int = 0,
         @ColumnInfo(name = "number")
         var number: String = "",
         @ColumnInfo(name = "type")
         var type: String = "",
-        @ColumnInfo(name = "f_l_station")
-        var first_last_station: String = "",
-        @ColumnInfo(name = "station_name")
-        var station_name: String = ""
+        @ColumnInfo(name = "first_station")
+        var firstStation: String = "",
+        @ColumnInfo(name = "last_station")
+        var lastStation: String = "",
+        @ColumnInfo(name = "station_id")
+        var stationId: String = ""
 )

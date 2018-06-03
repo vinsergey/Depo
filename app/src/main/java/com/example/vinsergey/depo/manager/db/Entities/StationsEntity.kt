@@ -7,11 +7,13 @@ import android.arch.persistence.room.ForeignKey.CASCADE
 import android.arch.persistence.room.PrimaryKey
 
 @Entity(tableName = "stations", foreignKeys = [ForeignKey(entity = RouteEntity::class,
-        parentColumns = ["station_name"],
-        childColumns = ["station_name"],
+        parentColumns = ["stationId"],
+        childColumns = ["stationId"],
         onDelete = CASCADE)])
 data class StationsEntity(
         @PrimaryKey
+        @ColumnInfo(name = "station_id")
+        var stationId: Int = 0,
         @ColumnInfo(name = "station_name")
         var stationName: String = "",
         @ColumnInfo(name = "course")

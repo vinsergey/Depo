@@ -1,4 +1,7 @@
 package com.example.vinsergey.depo.ui
 
-class MainViewModel {
+import android.arch.lifecycle.ViewModel
+
+class MainViewModel : ViewModel() {
+
 }

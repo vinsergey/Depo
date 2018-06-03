@@ -13,7 +13,7 @@ interface RouteDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insert(route: List<RouteEntity>)
 
-    @Query("SELECT number, f_l_station FROM route WHERE type = :type")
+    @Query("SELECT number, first_station, last_station FROM route WHERE type = :type")
     fun getNumberRoute(type: String): List<RouteEntity>
 
     @Query("SELECT station_name FROM stations WHERE station_name = :stationName AND course = :course")

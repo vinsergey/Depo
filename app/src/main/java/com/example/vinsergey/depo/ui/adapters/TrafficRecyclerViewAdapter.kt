@@ -5,8 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import com.example.vinsergey.depo.R
-import com.example.vinsergey.depo.ui.RouteModel
+import com.example.vinsergey.depo.ui.models.RouteModel
 import java.util.*
 
 class TrafficRecyclerViewAdapter : RecyclerView.Adapter<TrafficRecyclerViewAdapter.ViewHolder>() {
@@ -33,7 +32,7 @@ class TrafficRecyclerViewAdapter : RecyclerView.Adapter<TrafficRecyclerViewAdapt
         notifyDataSetChanged()
     }
 
-    class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val numberRoute: TextView = itemView.findViewById(R.id.number_route)
         val startRoute: TextView = itemView.findViewById(R.id.start_route)
         val endRoute: TextView = itemView.findViewById(R.id.end_route)

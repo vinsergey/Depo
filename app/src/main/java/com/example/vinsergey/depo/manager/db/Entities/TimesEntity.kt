@@ -7,8 +7,8 @@ import android.arch.persistence.room.ForeignKey.CASCADE
 import android.arch.persistence.room.PrimaryKey
 
 @Entity(tableName = "times", foreignKeys = [ForeignKey(entity = StationsEntity::class,
-        parentColumns = ["station_name"],
-        childColumns = ["station_name"],
+        parentColumns = ["stopId"],
+        childColumns = ["stopId"],
         onDelete = CASCADE)])
 data class TimesEntity(
         @PrimaryKey

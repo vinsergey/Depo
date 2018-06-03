@@ -1,4 +1,4 @@
-package com.example.vinsergey.depo.ui
+package com.example.vinsergey.depo.ui.models
 
 data class RouteModel(
         var numberRoute: String? = null,
